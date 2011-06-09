@@ -1,0 +1,272 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+a, a:visited, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+  font-family: 'Damion';
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+  font-family: 'Damion';
+}
+
+.large, h2 {
+	font-size: 42px;
+	line-height: 48px;
+  font-family: 'Damion';
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+  font-family: 'Damion';
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+  font-family: 'Damion';
+}
+
+body {
+	font-family: Palatino, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.small, small {
+	font-size: 16px;
+	line-height: 18px;
+  font-family: 'Geo', serif;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+html {
+  height: 100%;
+}
+
+body {
+	width: 100%;
+	padding: 0;
+	background: rgb(232,232,232);
+	color: rgb(60,60,60);
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+  min-height: 100%;
+  height: 100%;
+}
+
+.half_screen {
+  min-height: 50%;
+  text-align: center;
+  font-family: 'Damion', arial, serif;
+}
+
+#good {
+  background-color: white;
+  color: black;
+}
+
+#bad {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  color: white;
+  top: -30px;
+  position: relative;
+  text-align: right;
+}
+
+footer a, footer a:visited, footer a:hover {
+  color: white;
+  padding: 0 5px 5px 20px;
+  text-decoration: none;
+}
+
+.button {
+  cursor: pointer;
+  padding: 0.2em 0.2em;
+  color: black;
+  z-index: -200;
+}
+
+#settings {
+  min-height: 100%;
+  text-align: center;
+}
+
+.chart {
+  display: inline;
+}
+
+input[type=text] {
+  text-align: center;
+  background-color: #E8E8E8;
+  color: black;
+  border: 2px solid black;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  width: 5em;
+  padding-left: 0.5em;
+}
+
+#help {
+  width: 658px;
+  margin: auto auto;
+  text-align: justify;
+}
+
+#help p {
+  padding-top: 20px;
+}
+
+em {
+  font-weight: bold;
+}
+
+#patterns {
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	body {
+	}
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	body {
+	}
+	
+  .gigantic {
+  	font-size: 76px;
+	  line-height: 70px;
+	  letter-spacing: -2px;
+  }
+
+  #help {
+    width: 300px;
+  }
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	body {
+	}
+	
+  .gigantic {
+  	font-size: 100px;
+	  line-height: 110px;
+	  letter-spacing: -2px;
+  }
+
+  #help {
+    width: 460px;
+  }
+
+}
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	body {
+	
+	}
+	
+}
+

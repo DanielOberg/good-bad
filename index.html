@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Good/Bad</title>
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" media="all" href="style.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+    <link href='http://fonts.googleapis.com/css?family=Damion' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Geo' rel='stylesheet' type='text/css'/>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<script src="script.js"></script>
+	</head>
+	
+	<body lang="en">
+    <div id="good" class="touchbox gigantic half_screen">
+      <span id="good_headline">good</span> <br />
+      <time>00:00:00</time>
+    </div>
+    <hr />
+    <div id="bad" class="touchbox gigantic half_screen">
+      <span id="bad_headline">bad</span> <br />
+      <time>00:00:00</time>
+    </div>
+    <hr />
+    <footer class="small">
+      <a href="#settings" id="settings_btn"> reset </a> <a href="#help" id="settings_btn"> help </a>  <a href="http://twitter.com/daniel_oberg"> made by @daniel_oberg </a>
+    </footer>
+    <div id="settings">
+      <header><h1>good/bad</h1></header>
+      <br />
+      <p>
+      <input type="text" pattern="[0-9]*" placeholder="good hours" id="good_hours_goal" class="large enter_listener" />/
+      <input type="text" pattern="[0-9]*" placeholder="bad hours" id="bad_hours_goal" class="large enter_listener" />
+      </p>
+      <br />
+      <p>
+      <a id="go_btn" class="button gigantic">go!</a>
+      </p>
+      <br />
+      <br />
+      <div id="patterns" style="display: none;">
+        <br />
+        <h1>Patterns</h1>
+        <div class="chart" id="line_chart"></div>
+        <div class="chart" id="pie_chart"></div>
+        <br />
+        <br />
+      </div>
+      <div id="help">
+        <h2>What's this?</h2>
+
+      <p>
+      <em class="summary">
+      Short version. It's a free tool for helping yourself stay motivated. It works 
+      exactly like a chess clock and you try to find strategies to minimize your 
+      procastination with it.
+      </em>
+      </p>
+      <p>
+      You decided that tomorrow you would work from home, really work, all day long.
+      So you wake up and think to yourself I have to eat some breakfast first.
+      <em>You might as watch some TV</em> or surf the internet while you eat. Why not?
+      You like multitasking! <em>Should really get to work now.</em> Well after cleaning
+      your desk. Time for lunch! Already that late? You will do better tomorrow,
+       I'm sure of it!
+      </p>
+      <p>
+      Familiar? Well break that habit with this multi-purpose tool! All you need 
+      to do is to input the number of hours you would like to spend on work (we 
+      call them "good hours") and how much time you would like to spend on other 
+      things like snacky snack time (bad hours).
+      </p>
+      <p>
+      When you click on either good or bad the count-down timer will start. You
+      can then freely <em>switch between the good time and the bad time countdown.</em>, 
+      like a chess clock.
+      </p>
+      <p>
+      <em>The goal of this game-against-yourself is simple. Finish the good time counter 
+        before the bad time counter.</em> How you wish to spend the bad time and when you 
+      wish to switch between them is all up to you, but remember: <em>your 
+        time IS limited.</em>
+      </p>
+      <br />
+      <br />
+      <h2>Benefits</h2>
+      <p>The concept is extremely simple yet it forces you to take action by:</p><br />
+      <ol>
+        <li>prioritizing your non-working time</li>
+        <li>realizing you have a limited amount of time to be spent</li>
+        <li>discover time-wasters (your completed session is visualized)</li>
+      </ol>
+      <p>Like any good game, you need to find a good strategy.</p>
+      <br />
+      <br />
+      <h2>Rules</h2>
+      <p></p>
+      <ol>
+        <li>No less than one hour on each must be set</li>
+        <li><em>Anything that is not considered work is bad time.</em> Even if it
+        just is a bathroom break</li>
+        <li><em>If your bad hours time is up before good hours you loose</em></li>
+      </ol>
+
+      <p><br />Good luck with your work, Go(o)d help us.</p>
+      <p>Signed: Daniel Öberg</p>
+      
+      <p></p>
+      </div>
+    </div>
+	</body>
+	
+</html>
